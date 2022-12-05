@@ -22,6 +22,11 @@ I graduated from Novosibirsk State University. I have a master's degree in energ
 +Adobe Photoshop
 ====
 ###Code example:
+```
+const stringToNumber = function(str){
+  return parseInt(str);
+}
+```
 ====
 ###Courses:
 +CodeBasics HTML
