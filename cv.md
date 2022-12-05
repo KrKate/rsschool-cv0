@@ -10,12 +10,8 @@ Junior Frontend Developer
 *___Telegram:___ @Kr_Ekaterina
 =====
 ###About Myself:
+
 I graduated from Novosibirsk State University. I have a master's degree in energy. 
-
-I’m interested in Web Development because this occupation provides endless possibilities for professional growth,
-besides there’s a huge amount of free high quality resources for self-education and a large community of developers.
-
-I believe, that my ability to learn and to gain new skills will lead me through this path of becoming a proficient Frontend Developer.
 ===
 ###Skills and Proficiency:
 +HTML5
@@ -27,7 +23,7 @@ I believe, that my ability to learn and to gain new skills will lead me through 
 ====
 ###Code example:
 ====
-Courses:
+###Courses:
 +CodeBasics HTML
 +CodeBasics CSS
 +RS School Course "JavaScript/Front-end. Stage 0" (in progress)
