@@ -30,7 +30,7 @@ I graduated from Novosibirsk State University. I have a master's degree in energ
 +JavaScript Manual on learnjavascript.ru (in progress)
 ===
 ###Languages:
-English
+English - A2
 Russian - Native
 
 
