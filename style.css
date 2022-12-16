@@ -1,3 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #aacbdc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 h1 {
- color:blueviolet;
+    font-size: 45px;
+    margin-top: 20px;
+    color:#aacbdc;
+    text-align: center;
+}
+
+.navigation ul {
+   margin-left: 5%;
+    display: flex;
+    align-items: center;
+   padding: 10px 5px;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+    margin: 0 5px;
+    color: #ffffff;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.navigation li:hover {
+    color: #aacbdc;
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 30px auto;
+    box-shadow: 0.6em 0.6em 8px rgba(122, 122, 122, 0.7)
+
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: cover;
+    background-color: #4a4854;
+}
+
+.profession {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+.my-photo {
+    margin-top: 15px;
+    margin-right: 40%;
+    margin-left: 40%;
+    width: 20%;
+    border: 5px solid #aacbdc;
+    border-radius: 50%;
+}
+
+.my-photo:hover {
+    border: 5px solid #864ba3;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.section {
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.main {
+    width: 50%;
+    color: #ffffff;
+    background-color: #4a4854;
+}
+
+.footer {
+    display: inline-block;
+    padding: 15px 0;
+    width: 100%;
+    height: cover;
+    background-color: #4a4854;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.footer-yearOfCreate {
+    position:relative;
+    bottom: 8px;
+    font-size: 2vw;
+    margin-right: 25px;
+   
+}
+
+.footer-github img {
+    width: 4%;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+
+.footer-rsschool img {
+    width: 4%;
+    border-radius: 50%;
+}
+
+.footer img {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition: transform .8s ease-in-out;
+}
+
+.footer img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
