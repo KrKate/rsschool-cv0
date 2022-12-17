@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 h1 {
@@ -47,6 +48,7 @@ a {
 }
 
 .container {
+  
     max-width: 1440px;
     margin: 30px auto;
     box-shadow: 0.6em 0.6em 8px rgba(122, 122, 122, 0.7)
@@ -57,6 +59,7 @@ a {
     width: 100%;
     height: cover;
     background-color: #4a4854;
+    font-family: 'Roboto', sans-serif;
 }
 
 .profession {
@@ -82,24 +85,30 @@ a {
 .wrapper {
     width: 100%;
     display: flex;
+    background-color: #4a4854;
 }
 
 .sections {
     width: 50%;
     background-color: #ffffff;
+    color: #4a4854;
 }
 
 .main {
     width: 50%;
     color: #ffffff;
-    background-color: #4a4854;
+    
 }
 
-.education_head {
+.sections_head {
     background-color: #aacbdc;
     margin: 15px;
+    padding: 3px 5px;
 }
 
+.education {
+    margin-left: 20px;
+}
 
 .education_university {
    font-size: 19px;
@@ -117,37 +126,67 @@ a {
     margin: 0 0 20px 20px;
 }
 
-.lang {
-    margin-bottom: 20px;
+.languages {
+    margin-left: 20px;
 }
 
-.languages_head {
-    background-color: #aacbdc;
-    margin: 15px;
+.lang {
+    margin-bottom: 20px;
+    font-size: 19px;
 }
 
 .languages_name {
-    font-size: 19px;
+   
     font-weight: bold;
-    margin: 10px 0 10px 20px;
+    margin: 10px 20px 10px 20px;
     
 }
 
-.languages_level {
-    font-size: 19px;
-    margin-left: 30px;
-}
-
-
 .english-level {
-    width: 40%;
+    width: 50%;
     margin: 10px 25%;
 }
 
+.contacts li {
+    font-size: 19px;
+    list-style-type: none;
+    margin: 10px 0 20px 20px;
+}
 
+.contacts_name {
+    font-weight: bold;
+}
 
+.contacts a {
+    color:#000000;
+}
 
+.contacts a:hover {
+    text-decoration: underline;
+    color: #864ba3;
+}
 
+.contacts_icon {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.main_head {
+    color: #aacbdc;
+    font-weight: bold;
+    margin: 15px;
+    padding: 3px 5px;
+}
+
+.about_text {
+    font-size: 17px;
+    margin: 10px 30px 20px 20px;
+    text-align: justify;
+}
+
+.code pre{
+    font-size: 16px;
+}
 
 .footer {
     display: inline-block;
@@ -175,8 +214,8 @@ a {
 }
 
 .footer-rsschool img {
-    width: 4%;
-    border-radius: 50%;
+    width: 6%;
+    border-radius: 10%;
 }
 
 .footer img {

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="./img/favicon.png" type="image/png" sizes="32x32">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,11 +15,11 @@
     <header class="header">
         <nav class="navigation">
             <ul>
-                <li>About me</li>
-                <li>Skills</li>
-                <li>Code</li>
-                <li>Projects</li>
-                <li><a href="#languages">Contact</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#scills">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#languages">Contacts</a></li>
                 <li><a href="#education">Education</a></li>
             </ul>
         </nav>
@@ -29,7 +31,7 @@
     <div class="wrapper">
         <aside class="sections">
             <section class="education" id="education">
-                <h2 class="education_head">Education and courses</h2>
+                <h2 class="sections_head">Education and courses</h2>
                 <span class="education_university">Novosibirsk State Technical University</span>
                 <span class="education_years">2011-2017</span>
                 <div class="education_faculty">Faculty of Energy</div>
@@ -39,7 +41,7 @@
             </section>
 
             <section class="languages" id="languages">
-                <h2 class="languages_head" >Languages</h2>
+                <h2 class="sections_head" >Languages</h2>
                 <div class="lang">
                     <span class="languages_name">Russian</span>
                     <span class="languages_level">native</span>
@@ -57,16 +59,43 @@
 
             </section>
 
+            <section class="contacts" id="contacts">
+                <h2 class="sections_head">Contacts</h2>
+                <ul>
+                <li class="сity"><img class="contacts_icon" src="./img/geometka.png" alt="geometka"><span class="contacts_name">Location: </span> Yekaterinburg, Russia</li>
+                <li class="telegram"><img class="contacts_icon" src="./img/telegram.png" alt="telegram"><span class="contacts_name">Telegram: </span><a href="https://t.me/Kr_Ekaterina" target="_blank">@Kr_Ekaterina</a></li>
+                <li class="discord"><img class="contacts_icon" src="./img/discord.png" alt="discord"><span class="contacts_name">Discord: </span> Ekaterina Kiryanova #2202</li>
+                <li class="github"><img class="contacts_icon" src="./img/github_blue.png" alt="github"><span class="contacts_name">Github: </span><a href="https://github.com/krkate" target="_blank">krkate</a></li>
+                </ul>
+            </section>
         </aside>
-        <main class="main">hthh
+
+        <main class="main">
+            <section class="about" id="about">
+                <h2 class="main_head">About me</h2>
+                <p class="about_text">I study web development because I enjoy it and I love solving complex problems. I'm really want to become a cool frontend developer and work width interesting projects.
+                    I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills.</p>
+            </section>
+            <section class="code" id="code">
+                <h2 class="main_head">Сode example</h2>
+                <pre><code>
+    function areYouPlayingBanjo(name) {
+        if (name.charAt(0) === "R" || name.charAt(0) === "r") {
+            return `${name} plays banjo`;
+        } else return `${name} does not play banjo`;
+    }
+                </code></pre>
+            </section>
+
         </main>
+
 
     </div>
 
     <footer class="footer">
         <span class="footer-yearOfCreate">2022</span>
         <a class="footer-github" href="https://github.com/krkate" target="_blank"><img src="./img/github.png"  alt="my-github"></a>
-        <a class="footer-rsschool" href="https://rs.school/js/" target="_blank"><img src="./img/rs-logo.png" alt="rsschool-logo"></a>
+        <a class="footer-rsschool" href="https://rs.school/js/" target="_blank"><img src="./img/rs-logo2.jpg" alt="rsschool-logo"></a>
     </footer>
 
     </div>
