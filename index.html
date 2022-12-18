@@ -1,10 +1,143 @@
+<!-- Самооценка ("+" означает, что требование выполнено)
+    + студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10
+    + вёрстка валидная +10
+    + вёрстка семантическая +20
+В коде странице присутствуют и используются по назначению следующие элементы:
+    + header, main, footer +5
+    + элемент nav +5
+    + только один заголовок h1 +5
+    + заголовки h2 +5
+    + в footer есть ссылка на гитхаб автора работы, год создания приложения, логотип курса со ссылкой на курс +10
+    + для оформления СV используются css-стили +10
+    + при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону +10
+    + на странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt +10
+    + навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a +10
+CV содержит:
+    + краткую информацию о себе +5
+    + контакты для связи +5
+    + перечень навыков +5
+    + пример кода. Код добавляется при помощи символов и тегов, а не картинкой +5
+    + перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения +5
+    + информацию об образовании и уровне английского +5
+    + CV выполнено на английском языке +10
+-->
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <title>My cv</title>
+    <title>CV Kiryanova Ekaterina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>My cv</h1>
-    <img src="my-photo.jpg" alt="my-photo" width="300">
+    <div class="container">
+    <header class="header">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#languages">Contacts</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+        <h1>Kiryanova Ekaterina</h1>
+        <p class="profession">Front-end developer</p>
+        <img class="my-photo" src="./img/my-photo.jpg" alt="my-photo">
+    </header>
+ 
+    <div class="wrapper">
+        <aside class="sections">
+            <section class="education" id="education">
+                <h2 class="sections_head">Education and courses</h2>
+                <span class="education_university">Novosibirsk State Technical University</span>
+                <span class="education_years">2011-2017</span>
+                <div class="education_faculty">Faculty of Energy</div>
+                <div class="education_degree">Master's degree</div>
+                <span class="education_university">Rolling Scopes School</span>
+                <span class="education_years">studying right now</span>
+            </section>
+
+            <section class="languages" id="languages">
+                <h2 class="sections_head" >Languages</h2>
+                <div class="lang">
+                    <span class="languages_name">Russian</span>
+                    <span class="languages_level">native</span>
+                </div>
+                <div class="lang">
+                    <span class="languages_name">Kazakh</span>
+                    <span class="languages_level">A1</span>
+                </div>
+
+                <div class="lang">
+                    <span class="languages_name">English</span>
+                    <span class="languages_level">B2</span><br>
+                    <a href="https://www.efset.org/cert/TxYtRw" target="_blank"><img class="english-level" src="./img/english-level.png" alt="english-level"></a>
+                </div>
+
+            </section>
+
+            <section class="contacts" id="contacts">
+                <h2 class="sections_head">Contacts</h2>
+                <ul>
+                <li class="сity"><img class="contacts_icon" src="./img/geometka.png" alt="geometka"><span class="contacts_name">Location: </span> Yekaterinburg, Russia</li>
+                <li class="telegram"><img class="contacts_icon" src="./img/telegram.png" alt="telegram"><span class="contacts_name">Telegram: </span><a href="https://t.me/Kr_Ekaterina" target="_blank">@Kr_Ekaterina</a></li>
+                <li class="discord"><img class="contacts_icon" src="./img/discord.png" alt="discord"><span class="contacts_name">Discord: </span> Ekaterina Kiryanova #2202</li>
+                <li class="github"><img class="contacts_icon" src="./img/github_blue.png" alt="github"><span class="contacts_name">Github: </span><a href="https://github.com/krkate" target="_blank">krkate</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <main class="main">
+            <section class="about" id="about">
+                <h2 class="main_head">About me</h2>
+                <p class="about_text">I study web development because I enjoy it and I love solving complex problems. I'm really want to become a cool frontend developer and work width interesting projects.
+                    I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills.</p>
+            </section>
+            <section class="skills" id="skills">
+                <h2 class="main_head">Skills</h2>
+                <ul>
+                    <li><img src="./img/html.png" alt="html-logo">HTML</li>
+                    <li><img src="./img/scc.png" alt="css-logo">CSS</li>
+                    <li><img src="./img/ps.png" alt="photoshop-logo">Photoshop</li>
+                    <li><img src="./img/git.png" alt="git-logo">Git</li>
+                    <li><img src="./img/github.png" alt="github-logo">GitHub</li>
+                </ul>
+            </section>
+            <section class="code" id="code">
+                <h2 class="main_head">Сode example</h2>
+                <pre><code>
+    function areYouPlayingBanjo(name) {
+        if (name.charAt(0) === "R" || name.charAt(0) === "r") {
+            return `${name} plays banjo`;
+        } else return `${name} does not play banjo`;
+    }
+                </code></pre>
+            </section>
+            <section class="projects" id="projects">
+                <h2 class="main_head">Projects</h2>
+                <h3><a href="https://krkate.github.io/to-do-list/" target="_blank" title="Click to see">To-do list</a></h3>
+                <p>This is a simple to-do list for your planning.</p>
+                <a href="https://krkate.github.io/to-do-list/" target="_blank"><img src="./img/todo.png" alt="todo-list"></a>
+            </section>
+        </main>
+
+
+    </div>
+
+    <footer class="footer">
+        <span class="footer-yearOfCreate">2022</span>
+        <a class="footer-github" href="https://github.com/krkate" target="_blank"><img src="./img/github.png"  alt="my-github"></a>
+        <a class="footer-rsschool" href="https://rs.school/js/" target="_blank"><img src="./img/rs-logo2.jpg" alt="rsschool-logo"></a>
+    </footer>
+
+    </div>
+
 </body>
 </html>
