@@ -169,7 +169,16 @@ a {
 .contacts_icon {
     width: 25px;
     margin-right: 10px;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+          transition: transform .6s ease-in-out;
 }
+
+
+.contacts_icon:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 
 .main_head {
     color: #aacbdc;
@@ -184,8 +193,58 @@ a {
     text-align: justify;
 }
 
+.skills {
+    margin: 40px 0;
+}
+
+.skills li {
+    font-size: 17px;
+    margin-left: 30px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.skills img {
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+}
+
+.skills img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 .code pre{
     font-size: 16px;
+}
+
+.projects h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.projects a:hover {
+    color:#aacbdc;
+    text-decoration: underline; 
+}
+
+.projects p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.projects img {
+    width: 70%;
+    margin: 30px 0px 0px 100px;
+    opacity: 0.8;
+}
+
+.projects img:hover {
+    border: 3px solid #864ba3;
+    opacity: 1;
 }
 
 .footer {

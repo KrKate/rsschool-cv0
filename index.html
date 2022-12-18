@@ -1,3 +1,27 @@
+<!-- Самооценка ("+" означает, что требование выполнено)
+    + студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10
+    + вёрстка валидная +10
+    + вёрстка семантическая +20
+В коде странице присутствуют и используются по назначению следующие элементы:
+    + header, main, footer +5
+    + элемент nav +5
+    + только один заголовок h1 +5
+    + заголовки h2 +5
+    + в footer есть ссылка на гитхаб автора работы, год создания приложения, логотип курса со ссылкой на курс +10
+    + для оформления СV используются css-стили +10
+    + при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону +10
+    + на странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt +10
+    + навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a +10
+CV содержит:
+    + краткую информацию о себе +5
+    + контакты для связи +5
+    + перечень навыков +5
+    + пример кода. Код добавляется при помощи символов и тегов, а не картинкой +5
+    + перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения +5
+    + информацию об образовании и уровне английского +5
+    + CV выполнено на английском языке +10
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +40,7 @@
         <nav class="navigation">
             <ul>
                 <li><a href="#about">About me</a></li>
-                <li><a href="#scills">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#code">Code</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#languages">Contacts</a></li>
@@ -76,6 +100,16 @@
                 <p class="about_text">I study web development because I enjoy it and I love solving complex problems. I'm really want to become a cool frontend developer and work width interesting projects.
                     I have good interpersonal skills, am an excellent team worker and very willing to learn and develop new skills.</p>
             </section>
+            <section class="skills" id="skills">
+                <h2 class="main_head">Skills</h2>
+                <ul>
+                    <li><img src="./img/html.png" alt="html-logo">HTML</li>
+                    <li><img src="./img/scc.png" alt="css-logo">CSS</li>
+                    <li><img src="./img/ps.png" alt="photoshop-logo">Photoshop</li>
+                    <li><img src="./img/git.png" alt="git-logo">Git</li>
+                    <li><img src="./img/github.png" alt="github-logo">GitHub</li>
+                </ul>
+            </section>
             <section class="code" id="code">
                 <h2 class="main_head">Сode example</h2>
                 <pre><code>
@@ -86,7 +120,12 @@
     }
                 </code></pre>
             </section>
-
+            <section class="projects" id="projects">
+                <h2 class="main_head">Projects</h2>
+                <h3><a href="https://krkate.github.io/to-do-list/" target="_blank" title="Click to see">To-do list</a></h3>
+                <p>This is a simple to-do list for your planning.</p>
+                <a href="https://krkate.github.io/to-do-list/" target="_blank"><img src="./img/todo.png" alt="todo-list"></a>
+            </section>
         </main>
 
 
